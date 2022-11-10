@@ -1,0 +1,376 @@
+/* --------------------------- CSS RESET ------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------------- CSS STYLESHEET ------------------------------- */
+
+/* --------------------------- FONT STYLE ------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+h1{
+    font-size: 25px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    /* background-color: #2a75bb; */
+    padding: 2%;
+    letter-spacing: 1px;
+ }
+
+h2{
+   font-size: 20px;
+   font-family: 'Anton', sans-serif;
+   font-weight: 400;
+   color: white;
+   text-align: center;
+   text-transform: uppercase;
+   background-color: #2a75bb;
+   padding: 3%;
+   letter-spacing: 1px;
+   border-radius: 1rem 1rem 0rem 0rem;
+}
+
+h3{
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    background-color: #ffdc78;
+    color: #c7a008;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+.red{
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    background-color: #ffaeae;
+    color: #ff0000;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    padding: 0.3rem;
+}
+
+h4{
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color:#1d2c5e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h5{
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+  color: #1d2c5e;
+  text-align: center;
+}
+
+/* --------------------------- GENERAL STYLE ------------------------------- */
+
+a{
+    text-decoration: none;
+}
+
+html{
+    background-color: #1d2c5e;
+}
+
+.body{
+    max-width: 90%;
+    background-color: #c6c6c6;
+    margin-left: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 150px;
+    padding: 10% 0% 10% 0%;
+    object-fit: cover;
+}
+
+.card{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 0 0 0.5rem 0;
+    margin: 5%;
+}
+
+/* --------------------------- MOBILE STYLE ------------------------------- */
+
+header{
+    width: 100%;
+    background-color: #2a75bb;
+}
+
+.nav:hover{
+    background-color: #1d2c5e;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav:nth-child(1){
+    border-bottom: #1d2c5e 4px solid;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav:nth-child(2){
+    border-bottom: #1d2c5e 4px solid;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.nav:nth-child(3){
+    border-bottom: #1d2c5e 4px solid;
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+.logo{
+    width: 70%;
+    margin-top: -10%;
+    margin-bottom: -10%;
+}
+
+.sort-btns{
+    display: flex;
+    flex-direction: row;
+    border:#1d2c5e solid 3px;
+    border-radius: 1rem;
+    width: 92%;
+    margin-left: 3%;
+    
+}
+
+.sort:nth-child(1){
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0.9rem 0 0 0.9rem;
+}
+
+.sort:nth-child(2){
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 0 0.9rem 0.9rem 0;
+}
+
+.sort:hover{
+    background-color:#1d2c5e;
+}
+
+h4:hover{
+    color:#c6c6c6;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2%;
+}
+
+.viewmore{
+    display: flex;
+    flex-direction: row;
+    border:#1d2c5e solid 3px;
+    border-radius: 1rem;
+    width: 92%;
+    margin-left: 3%;
+    justify-content: center;
+    padding-top: 1.2%;
+    padding-bottom: 1%;
+}
+
+.footbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #2a75bb;
+    justify-content: space-around;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+/* --------------------------- TABlET STYLE ------------------------------- */
+
+@media screen and (min-width: 420px){
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .nav{
+        width: 100%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+        margin-right: 5%;
+    }
+
+    .nav:hover{
+        width: 100%;
+    }
+
+    .nav:nth-child(1){
+        /* border-right: #1d2c5e 4px solid; */
+        border-bottom: none;
+        white-space: nowrap;
+    }
+
+    .nav:nth-child(2){
+        /* border-right: #1d2c5e 4px solid; */
+        border-bottom: none;
+    }
+    
+    .nav:nth-child(3){
+        /* border-right: #1d2c5e 4px solid; */
+        border-bottom: none;
+    }
+    
+    .nav:nth-child(4){
+        border-bottom: none;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .sort-btns{
+        display: flex;
+        flex-direction: row;
+        border:#1d2c5e solid 3px;
+        border-radius: 1rem;
+        width: 46%;
+        margin-left: 49%;
+        
+    }
+    
+    .sort:nth-child(1){
+        padding-left: 21%;
+        padding-right: 21%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 0.9rem 0 0 0.9rem;
+    }
+    
+    .sort:nth-child(2){
+        padding-left: 13%;
+        padding-right: 13%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 0 0.9rem 0.9rem 0;
+    }
+
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2%;
+    }
+}
+
+/* --------------------------- DESKTOP BODY STYLE ------------------------------- */
+@media screen and (min-width: 780px){
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2%;
+    }
+
+    .logo{
+        padding: 12%;
+    }
+
+    .sort-btns{
+        display: flex;
+        flex-direction: row;
+        border:#1d2c5e solid 3px;
+        border-radius: 1rem;
+        width: 21%;
+        margin-left: 75%;
+        
+    }
+    
+    .sort:nth-child(1){
+        padding-left: 18%;
+        padding-right: 15%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 0.9rem 0 0 0.9rem;
+    }
+    
+    .sort:nth-child(2){
+        padding-left: 3%;
+        padding-right: 7%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-radius: 0 0.9rem 0.9rem 0;
+    }
+}
+
+
+
