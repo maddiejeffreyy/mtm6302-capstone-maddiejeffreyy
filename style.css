@@ -1,4 +1,4 @@
-/* --------------------------- CSS RESET ------------------------------- */
+--------------------------- CSS RESET -------------------------------
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -88,6 +88,26 @@ h3{
     padding: 0.3rem;
 }
 
+.catch{
+    font-size: 14px;
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    background-color: #ffdc78;
+    color: #c7a008;
+    width: 85%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    padding: 0.3rem;
+    border: none;
+}
+
+.catch:hover{
+    background-color: #c7a008;
+    color: #ffdc78;
+}
+
 .red{
     font-size: 14px;
     font-family:'Roboto', sans-serif;
@@ -112,6 +132,7 @@ h4{
     letter-spacing: 1px;
 }
 
+
 h5{
   font-size: 10px;
   font-family: 'Roboto', sans-serif;
@@ -130,7 +151,7 @@ html{
     background-color: #1d2c5e;
 }
 
-.body{
+body{
     max-width: 90%;
     background-color: #c6c6c6;
     margin-left: 5%;
@@ -148,7 +169,7 @@ img{
     object-fit: cover;
 }
 
-.card{
+li{
     background-color: white;
     border-radius: 1rem;
     padding: 0 0 0.5rem 0;
@@ -223,13 +244,29 @@ header{
     background-color:#1d2c5e;
 }
 
-h4:hover{
-    color:#c6c6c6;
+.get-more:hover{
+    color:#2a75bb;
+    border:#2a75bb solid 5px;
 }
-.card-container{
+ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 2%;
+}
+
+.get-more{
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color:#1d2c5e;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border:#1d2c5e solid 5px;
+    padding: 1%;
+    width: 92%;
+    margin-left: 4%;
+    border-radius: 1rem;
 }
 
 .viewmore{
@@ -252,6 +289,7 @@ h4:hover{
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
 
 /* --------------------------- TABlET STYLE ------------------------------- */
 
@@ -326,7 +364,7 @@ h4:hover{
         border-radius: 0 0.9rem 0.9rem 0;
     }
 
-    .card-container{
+    ul{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         padding: 2%;
@@ -335,7 +373,7 @@ h4:hover{
 
 /* --------------------------- DESKTOP BODY STYLE ------------------------------- */
 @media screen and (min-width: 780px){
-    .card-container{
+    ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         padding: 2%;
